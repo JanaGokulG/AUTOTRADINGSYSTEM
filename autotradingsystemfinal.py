@@ -60,7 +60,7 @@ def get_stock_data(symbol):
         return None
 
     # Convert to the local time zone
-    local_timezone = pytz.timezone("Asia/Kolkata")  # Change as per your local timezone
+    local_timezone = pytz.timezone("Asia/Kolkata")  
     history.index = history.index.tz_convert(local_timezone)
 
     # Convert time to 12-hour AM/PM format
@@ -85,7 +85,7 @@ def update_display():
     last_prices = []
     for index, row in history.iterrows():
         suggestion = get_suggestion(symbol, row['Close'], last_prices)
-        # Insert stock data in the Stock Data table (not the Transaction History table)
+        # Insert stock data in the Stock Data table 
         stock_data_tree.insert("", "end", values=(row['Time'], f"${row['Close']:.2f}", suggestion))
         last_prices.append(row['Close'])
 

@@ -19,3 +19,6 @@ Open your terminal or command prompt and run:
 
 ```bash
 pip install yfinance matplotlib pandas pytz
+---
+---
+![Python](https://img.shields.io/badge/Python-3.x-blue)

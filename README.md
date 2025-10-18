@@ -13,6 +13,8 @@ A **desktop stock trading system** built with **Python**, **Tkinter**, and **yfi
 ## Requirements
 - Python 3.x
 
+    ![Python](https://img.shields.io/badge/Python-3.x-blue)
+
 ## Installation
 
 Open your terminal or command prompt and run:
@@ -20,5 +22,3 @@ Open your terminal or command prompt and run:
 ```bash
 pip install yfinance matplotlib pandas pytz
 ---
----
-![Python](https://img.shields.io/badge/Python-3.x-blue)
